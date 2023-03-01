@@ -24,6 +24,75 @@ body {
 
 .card {
   border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
+}
+
+/* Solution */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.middle_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 0;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+.card_wrapper {
+  display: flex;
+  align-self: center;
+  gap: 2rem;
+  padding: 32px;
+  flex-wrap: wrap;
+}
+
+.card_row_1,
+.card_row_2,
+.card_row_3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 2rem;
+}
+
+.card {
+  min-width: 250px;
+  min-height: 300px;
+  font-weight: 600;
+  padding: 1rem;
+  flex: 1;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 2;
+  padding-left: 16px;
+}
+
+ul {
+  list-style: none;
+  line-height: 2;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

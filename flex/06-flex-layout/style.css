@@ -25,3 +25,42 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/* Solution */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0 15px;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+.content {
+  text-align: center;
+}
+
+button {
+  padding: 10px 15px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
+}
